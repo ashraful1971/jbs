@@ -31,6 +31,45 @@ body {
     border-radius: 3px;
 }
 
+.main-nav-menu ul li {
+    margin-left: 15px;
+}
+
+/*responsive styles*/
+@media (max-width: 1036px) {
+    .menu-toggler {
+        display: block;
+    }
+
+    .main-nav-menu {
+        display: none;
+        margin-top: 20px;
+    }
+    
+    .main-nav-menu ul {
+        --tw-space-x-reverse: 0;
+        margin-right: calc(0px * var(--tw-space-x-reverse));
+        margin-left: calc(0px * calc(1 - var(--tw-space-x-reverse)));
+    }
+    
+    .main-nav-menu li {
+        display: block;
+    }
+    
+    .main-nav-menu li ul {
+        margin-left: 20px;
+    }
+    
+    .main-nav-menu li ul li a::before {
+        /* content: ">  "; */
+    }
+
+    .header-second-part {
+        /* flex-direction: column; */
+        display: block;
+    }
+}
+
 /*override style of parent css*/
 .page {
     background-color: #fff;

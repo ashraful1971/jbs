@@ -29,7 +29,7 @@
     <header>
         <!-- Top header start -->
         <div class="accent-bg text-white py-3">
-            <div class="container mx-auto flex justify-between items-center">
+            <div class="container mx-auto px-6 sm:flex text-center justify-between items-center">
                 <!-- ISSN text start -->
                 <div>
                     <p class="inline pr-6"><span class="font-bold">Online ISSN: </span>2345-4041</p>
@@ -48,7 +48,7 @@
 
         <!-- Second part of header start -->
         <div class="bg-white py-6 box-shadow">
-            <div class="container mx-auto flex justify-between items-center">
+            <div class="header-second-part container mx-auto px-6 md:flex justify-between items-center relative">
                 <!-- Logo/Journal name start -->
                 <div class="text-3xl text-black font-bold">
 					{capture assign="homeUrl"}
@@ -67,10 +67,11 @@
                 <!-- Logo/Journal name end -->
 
                 <!-- Main menu name start -->
-                <div>
-					{load_menu name="primary" ulClass="space-x-4" liClass="inline"}
+                <div class="main-nav-menu">
+					{load_menu name="primary" ulClass="nav-ul" liClass="md:inline block"}
                 </div>
                 <!-- Main menu name end -->
+                <button class="menu-toggler absolute top-0 right-8 hidden pointer"><i class="fa fa-bars" aria-hidden="true"></i></button>
             </div>
         </div>
         <!-- Second part of header end -->

@@ -3,10 +3,10 @@
 {if $numAnnouncementsHomepage && $announcements|@count}
 <!-- Announcements start -->
     <section class="mt-10">
-        <div class="container mx-auto">
+        <div class="container mx-auto px-6">
             <h2 class="font-bold text-2xl mb-4">Announcements</h2>
 
-            <div class="flex space-x-10">
+            <div class="md:flex md:space-x-10">
                 {foreach name=announcements from=$announcements item=announcement}
                 {if $smarty.foreach.announcements.iteration > $numAnnouncementsHomepage}
                     {break}
@@ -29,11 +29,11 @@
     {if $issue}
     <!-- Current issue start -->
     <section class="mt-10">
-        <div class="container mx-auto">
+        <div class="container mx-auto px-6">
             <h2 class="font-bold text-2xl mb-4">Current Issue</h2>
-            <div class="flex space-x-10">
+            <div class="sm:flex space-y-10 sm:space-y-0 sm:space-x-10">
                 <!-- Issue cover start -->
-                <div class="box-shadow rounded flex-none w-1/3">
+                <div class="box-shadow rounded flex-none w-full sm:w-1/3">
                     {assign var=issueCover value=$issue->getLocalizedCoverImageUrl()}
 		            {if $issueCover}
                     <a class="hover:text-gray-800" href="{url op="view" page="issue" path=$issue->getBestIssueId()}">

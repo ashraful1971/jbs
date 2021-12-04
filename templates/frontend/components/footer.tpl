@@ -6,6 +6,16 @@
     {load_script context="frontend"}
 
     {call_hook name="Templates::Common::Footer::PageFooter"}
+    
+    {* menu toggle script *}
+    <script>
+        $(document).ready(()=>{
+            $(".menu-toggler").click((e)=>{
+                e.preventDefault();
+                $(".main-nav-menu").toggle(300);
+            });
+        });
+    </script>
 </body>
 
 </html>
