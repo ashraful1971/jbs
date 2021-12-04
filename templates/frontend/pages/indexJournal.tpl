@@ -11,7 +11,7 @@
                 {break}
             {/if}
             <!-- item start -->
-            <div class="bg-white box-shadow p-6 rounded my-6">
+            <div class="bg-white box-shadow p-6 rounded my-6 border-l-4 border-accent">
                 <p class="accent-color">{$announcement->getDatePosted()|date_format:$dateFormatShort}</p>
                 <h3 class="text-black font-bold text-lg">
                     <a class="hover:text-gray-800" href="{url router=$smarty.const.ROUTE_PAGE page="announcement" op="view" path=$announcement->getId()}">{$announcement->getLocalizedTitle()|escape}</a>
@@ -43,7 +43,7 @@
 
                 <!-- content start -->
                 <div class="flex-1">
-                    <div class="bg-white box-shadow p-6 rounded">
+                    <div class="bg-white box-shadow p-6 rounded border-l-4 border-accent">
                         <h3 class="text-black font-bold text-lg">
                             {$issue->getIssueIdentification()|strip_unsafe_html}
                         </h3>
@@ -101,7 +101,7 @@
 
             {foreach name="ami" from=$section.articles item=article}
             <!-- item start -->
-            <div class="bg-white box-shadow p-6 rounded my-6">
+            <div class="bg-white box-shadow p-6 rounded my-6 border-l-4 border-accent">
                 {assign var=articlePath value=$article->getBestId()}
                 <h3 class="text-black font-bold text-lg"><a class="hover:text-gray-800" {if $journal}href="{url journal=$journal->getPath() page="article" op="view" path=$articlePath}"{else}href="{url page="article" op="view" path=$articlePath}"{/if}>{$article->getLocalizedTitle()|strip_unsafe_html}</a></h3>
                 

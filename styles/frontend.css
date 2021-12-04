@@ -14,6 +14,10 @@ body {
     color: #22B6AF;
 }
 
+.border-accent {
+    border-color: #22B6AF;
+}
+
 .box-shadow {
     box-shadow: rgb(17 17 26 / 4%) 0px 3px 10px, rgb(17 17 26 / 1%) 0px 8px 32px;
 }
