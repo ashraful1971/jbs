@@ -1,0 +1,60 @@
+body {
+    font-family: Rubik;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.8em;
+    background-color: #F5F8FF;
+}
+
+.accent-bg {
+    background-color: #22B6AF;
+}
+
+.accent-color {
+    color: #22B6AF;
+}
+
+.box-shadow {
+    box-shadow: rgb(17 17 26 / 4%) 0px 3px 10px, rgb(17 17 26 / 1%) 0px 8px 32px;
+}
+
+.article-gallery-li .obj_galley_link {
+    background-color: #22B6AF;
+    color: #fff;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 3px;
+}
+
+/*override style of parent css*/
+.page {
+    background-color: #fff;
+    box-shadow: rgb(17 17 26 / 4%) 0px 3px 10px, rgb(17 17 26 / 1%) 0px 8px 32px;
+    padding: 30px;
+}
+
+.page h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin: .67em 0;
+}
+
+.page h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: .4em 0;
+}
+
+.page .date, .page .date::before {
+    color: #22B6AF;
+    font-weight: 500;
+}
+
+.page .read_more {
+    color: #22B6AF;
+}
+
+.obj_announcement_summary .summary, .page .date, .page .read_more {
+    font-size: inherit;
+    line-height: inherit;
+}

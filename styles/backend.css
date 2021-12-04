@@ -1,0 +1,18 @@
+nav.app__nav {
+    background-color: #111 !important;
+}
+
+nav.app__nav .app__navItem--hasSubmenu {
+    color: #fff;
+    font-size: 20px;
+}
+
+nav.app__nav li a, nav.app__nav li a:visited {
+    color: #fff;
+    padding: 8px 15px;
+}
+
+nav.app__nav li a.app__navItem--isCurrent {
+    display: block;
+    background-color: #002c40;
+}
